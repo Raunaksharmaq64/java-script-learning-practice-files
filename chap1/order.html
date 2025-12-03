@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - B.Tech Academic Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">B.Tech Helper</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="order.html" class="nav-link active">Order</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Place Your Order</h1>
+            <p>Fill in the details below to get started</p>
+        </div>
+    </section>
+
+    <section class="order-section">
+        <div class="container">
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="Engineering Mathematics I">Engineering Mathematics I</option>
+                        <option value="Engineering Physics">Engineering Physics</option>
+                        <option value="Engineering Chemistry">Engineering Chemistry</option>
+                        <option value="Engineering Mechanics">Engineering Mechanics</option>
+                        <option value="Engineering Drawing">Engineering Drawing</option>
+                        <option value="Basic Electrical Engineering">Basic Electrical Engineering</option>
+                        <option value="Programming for Problem Solving">Programming for Problem Solving</option>
+                        <option value="Communication Skills">Communication Skills</option>
+                        <option value="Workshop Practice">Workshop Practice</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pages">Number of Pages</label>
+                    <input type="number" id="pages" name="pages" min="1" value="1" required>
+                </div>
+
+                <div class="price-display">
+                    <h3>Total Price: <span id="totalPrice">₹10</span></h3>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Order</button>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <p>Order submitted successfully! We'll contact you soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 B.Tech Helper. All rights reserved.</p>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>

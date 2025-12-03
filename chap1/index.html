@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - B.Tech Academic Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">B.Tech Helper</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="order.html" class="nav-link">Order</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Select a subject to view available services</p>
+        </div>
+    </section>
+
+    <section class="subjects-section">
+        <div class="container">
+            <div class="subjects-grid">
+                <div class="subject-card" onclick="openSubject('Engineering Mathematics I')">
+                    <h3>Engineering Mathematics I</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Engineering Physics')">
+                    <h3>Engineering Physics</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Engineering Chemistry')">
+                    <h3>Engineering Chemistry</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Engineering Mechanics')">
+                    <h3>Engineering Mechanics</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Engineering Drawing')">
+                    <h3>Engineering Drawing</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Basic Electrical Engineering')">
+                    <h3>Basic Electrical Engineering</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Programming for Problem Solving')">
+                    <h3>Programming for Problem Solving</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Communication Skills')">
+                    <h3>Communication Skills</h3>
+                </div>
+                <div class="subject-card" onclick="openSubject('Workshop Practice')">
+                    <h3>Workshop Practice</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="subjectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalSubject"></h2>
+            <div class="modal-buttons">
+                <button class="modal-btn" onclick="orderService('assignment')">Order Assignment</button>
+                <button class="modal-btn" onclick="orderService('practical')">Order Practical / Drawing Sheets</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 B.Tech Helper. All rights reserved.</p>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>

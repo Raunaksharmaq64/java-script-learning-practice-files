@@ -1,0 +1,28 @@
+.button{
+    height: 200px;
+    width: 400px;
+}
+#red{
+    background-color: red;
+}
+#yellow{
+    background-color: yellow
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#pink{
+    background-color: pink;
+}
+#grey{
+    background-color: grey;
+}
+.div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
